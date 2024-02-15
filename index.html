@@ -3,33 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="test1.css">
     <title>SIP Calculator</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>SIP Calculator</h1>
-        <form id="sipForm">
-            <label for="investmentAmount">Investment Amount:</label>
-            <input type="number" id="investmentAmount" required>
+        <header>
+            <h1>SIP Calculator</h1>
+        </header>
+        <main>
+            <form id="sipForm">
+                <div class="form-group">
+                    <label for="investmentAmount">Investment Amount:</label>
+                    <input type="number" id="investmentAmount" required>
+                </div>
 
-            <label for="sipDuration">SIP Duration (in years):</label>
-            <input type="number" id="sipDuration" required>
+                <div class="form-group">
+                    <label for="sipDuration">SIP Duration (in years):</label>
+                    <input type="number" id="sipDuration" required>
+                </div>
 
-            <label for="annualReturn">Expected Annual Return (%):</label>
-            <input type="number" id="annualReturn" required>
+                <div class="form-group">
+                    <label for="annualReturn">Expected Annual Return (%):</label>
+                    <input type="number" id="annualReturn" required>
+                </div>
 
-            <button type="button" onclick="calculateSIP()">Calculate</button>
+                <button type="button" onclick="calculateSIP()">Calculate</button>
 
-           
-             <div id="result">
-            <p>Total Investment: <span id="totalInvestment"></span></p>
-            <p>Wealth Gain: <span id="wealthGain"></span></p>
-            <p>Total Return: <span id="totalReturn"></span></p>
-            <canvas id="chart" width="400" height="400"></canvas>
+                <div id="result" class="result">
+                    <p class="total-investment">Total Investment: <span id="totalInvestment"></span></p>
+                    <p class="wealth-gain">Wealth Gain: <span id="wealthGain"></span></p>
+                    <p class="total-return">Total Return: <span id="totalReturn"></span></p>
+                    <canvas id="chart" width="400" height="400"></canvas>
+                </div>
+            </form>
+        </main>
     </div>
-     </form>
-    <script src="test1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
