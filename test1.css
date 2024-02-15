@@ -6,7 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f4f4;
+    background-color: #f0f0f0; /* Light gray background */
 }
 
 .container {
@@ -16,6 +16,10 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+h1 {
+    color: #3498db; /* Blue header text color */
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -23,14 +27,18 @@ form {
 
 label {
     margin-top: 10px;
+    color: #2ecc71; /* Green label text color */
 }
 
 input {
     margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px;
 }
 
 button {
-    background-color: #4caf50;
+    background-color: #e74c3c; /* Red button background color */
     color: #fff;
     padding: 10px;
     border: none;
@@ -39,10 +47,11 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #c0392b; /* Darker red on hover */
 }
 
 #result {
     margin-top: 20px;
     font-weight: bold;
+    color: #27ae60; /* Dark green result text color */
 }
