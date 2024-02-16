@@ -53,10 +53,6 @@ input {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
-}
-
-input[type="range"] {
-    width: 100%;
     margin-top: 5px;
 }
 
