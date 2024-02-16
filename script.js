@@ -36,3 +36,17 @@ function updatePieChart(totalInvestment, wealthGain, totalReturn) {
         },
     });
 }
+
+// Update the labels for sliders
+document.getElementById('investmentAmount').addEventListener('input', function() {
+    document.getElementById('investmentAmountLabel').innerText = this.value;
+});
+
+document.getElementById('sipDuration').addEventListener('input', function() {
+    document.getElementById('sipDurationLabel').innerText = this.value;
+});
+
+document.getElementById('annualReturn').addEventListener('input', function() {
+    document.getElementById('annualReturnLabel').innerText = this.value;
+});
+
